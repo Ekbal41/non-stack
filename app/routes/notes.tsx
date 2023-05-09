@@ -29,7 +29,7 @@ export default function NotesPage() {
         <Form action="/logout" method="post">
           <button
             type="submit"
-            className="rounded font-mono bg-indigo-600 py-2 px-4 text-blue-100 hover:bg-indigo-500 active:bg-indigo-600"
+            className="text-xl font-extrabold font-mono "
           >
             Logout
           </button>

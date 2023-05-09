@@ -93,8 +93,8 @@ export default function LoginPage() {
 
   return (
     <div className="flex min-h-full flex-col justify-center">
-      <div className="mx-auto w-full max-w-md px-8  border border-indigo-500 rounded p-4">
-      <h1 className="text-center text-3xl mb-4 text-indigo-500">Log In</h1>
+      <div className="mx-auto w-full max-w-md px-8 shadow pb-5 border-t-4 bg-white border-indigo-500  rounded-md p-4">
+      <h1 className="text-center font-mono text-3xl mb-4 text-indigo-500 ">Log In</h1>
         <Form method="post" className="space-y-6">
           <div>
             <label
@@ -117,7 +117,7 @@ export default function LoginPage() {
                 className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
               {actionData?.errors?.email && (
-                <div className="pt-1 text-red-700" id="email-error">
+                <div className="pt-1 text-red-500 font-mono text-sm" id="email-error">
                   {actionData.errors.email}
                 </div>
               )}
@@ -143,7 +143,7 @@ export default function LoginPage() {
                 className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
               {actionData?.errors?.password && (
-                <div className="pt-1 text-red-700" id="password-error">
+                <div className="pt-1 text-red-500 font-mono text-sm" id="password-error">
                   {actionData.errors.password}
                 </div>
               )}
@@ -153,7 +153,7 @@ export default function LoginPage() {
           <input type="hidden" name="redirectTo" value={redirectTo} />
           <button
             type="submit"
-            className="w-full rounded bg-indigo-500  py-2 px-4 text-white hover:bg-indigo-600 focus:bg-indigo-400"
+            className="w-full rounded bg-indigo-500 font-mono py-2 px-4 text-white hover:bg-indigo-600 focus:bg-indigo-400"
           >
             Log in
           </button>
@@ -184,9 +184,12 @@ export default function LoginPage() {
                 Sign up
               </Link>
             </div>
+            
           </div>
+         
         </Form>
       </div>
+     
     </div>
   );
 }

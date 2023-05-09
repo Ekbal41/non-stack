@@ -106,7 +106,7 @@ export default function NewNotePage() {
       <div className="text-left ">
         <button
           type="submit"
-          className="rounded bg-indigo-500 py-2 px-4 text-white hover:bg-indigo-600 focus:bg-indigo-400"
+          className="rounded bg-indigo-500 py-1 px-4 text-white hover:bg-indigo-600 focus:bg-indigo-400"
         >
           Save Note
         </button>
