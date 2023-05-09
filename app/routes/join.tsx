@@ -110,8 +110,8 @@ export default function Join() {
   const actionData = useActionData() as ActionData;
   const emailRef = React.useRef<HTMLInputElement>(null);
   const passwordRef = React.useRef<HTMLInputElement>(null);
+  // const nameRef = React.useRef<HTMLInputElement>(null);
   const password2Ref = React.useRef<HTMLInputElement>(null);
-  const actionDataNoType = useActionData();
 
 
   React.useEffect(() => {
